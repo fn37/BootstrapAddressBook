@@ -1,8 +1,8 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" class="h-100">
 
 <head>
-    <title>Address Book</title>
+    <title>Address Book Template</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -13,95 +13,208 @@
         <link rel="stylesheet" href="css/site.css">
 </head>
 
-<body>
-       <div class="container mt-5">
-        <h1>My Address Book</h1>
-           <div class="row bg-light p-4 row-cols-1 row-cols-2 shadow-lg">
-                <div class="col-md-4 col-12">
-                    <div>
-                        <img src="/img/GirlOne_4x.png" alt="girl-image" class="img-fluid img-thumbnail">
-                    </div>
+<body class="h-100">
+    <div class="container mt-5">
+        <h2>My Address Book</h2>
+        <div class="p-3 border border-2 shadow-lg bg-light">
+            <form class="row g-3 p-2" action="#">
+                <div class="col-12 col-md-4">
+                    <img src="img/GirlOne_4x.png" alt="girl image" class="img-fluid">
                 </div>
+
+
                 <div class="col-12 col-md-8">
-                    <div class="bg-light">
-                        <form action="#">
+                    <div class="row">
 
-                            <div class="row">
-                                <div class="col">
-                                    <label type="form-label">First Name</label>
-                                    <input type="text" class="form-control" placeholder="First Name" aria-label="First Name" required>
-                                </div>
-                                <div class="col">
-                                    <label type="form-label">Last Name</label>
-                                    <input type="text" class="form-control" placeholder="Last Name" aria-label="Last Name" required>
-                                </div>
-                            </div>
+                        <!-- NAME -->
+                        <div class="col-12 col-md-6">
+                            <label type="form-label" for="inputFirstName">First Name</label>
+                            <input type="text" class="form-control" placeholder="First Name" aria-label="First Name" id="inputFirstName" required>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <label type="form-label" for="inputLastName">Last Name</label>
+                            <input type="text" class="form-control" placeholder="Last Name" aria-label="Last Name" id="inputLastName" required>
+                        </div>
+                    
+                        <!-- CONTACT INFORMATION -->
+                        <div class="col-12 col-md-6">
+                            <label type="form-label" for="inputEmail">Email</label>
+                            <input type="email" class="form-control" placeholder="Email" aria-label="Email" id="inputEmail" required>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <label type="form-label" for="inputPhone">Phone</label>
+                            <input type="tel" class="form-control" placeholder="Phone" aria-label="Phone" id="inputPhone" required>
+                        </div>
 
-                            <div class="row">
-                                <div class="col">
-                                    <label type="form-label">Email</label>
-                                    <input type="email" class="form-control" placeholder="Email" aria-label="Email" required>
-                                </div>
-                                <div class="col">
-                                    <label type="form-label">Phone</label>
-                                    <input type="tel" class="form-control" placeholder="Phone" aria-label="Phone" required>
-                                </div>
-                            </div>
+                        <!-- ADDRESS -->
+                        <div class="col-12">
+                            <label type="form-label" for="inputAddress">Address</label>
+                            <input type="text" class="form-control" placeholder="1234 Main St" aria-label="Address" id="inputAddress" required>
+                        </div>
+                    
+                        <div class="col-12">
+                            <label type="form-label" for="inputAddress2">Address 2</label>
+                            <input type="text" class="form-control" placeholder="Apartment, studio, house" id="inputAddress2" aria-label="Address Two" required>
+                        </div>
+                    
+                        <div class="col-12 col-md-6">
+                            <label type="form-label" for="inputCity">City</label>
+                            <input type="text" class="form-control" placeholder="City" aria-label="City" id="inputCity" required>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <label type="form-label" for="inputCounty">County</label>
+                            <select class="form-select" id="inputCounty">
+                                <option value="--England--">--England--</option>
+                                <option value="Avon">Avon</option>
+                                <option value="Bedfordshire">Bedfordshire</option>
+                                <option value="Berkshire">Berkshire</option>
+                                <option value="Bristol">Bristol</option>
+                                <option value="Buckinghamshire">Buckinghamshire</option>
+                                <option value="Cambridgeshire">Cambridgeshire</option>
+                                <option value="Cheshire">Cheshire</option>
+                                <option value="Cleveland">Cleveland</option>
+                                <option value="Cornwall">Cornwall</option>
+                                <option value="Cumbria">Cumbria</option>
+                                <option value="Derbyshire">Derbyshire</option>
+                                <option value="Devon">Devon</option>
+                                <option value="Dorset">Dorset</option>
+                                <option value="Durham">Durham</option>
+                                <option value="East Riding of Yorkshire">East Riding of Yorkshire</option>
+                                <option value="East Sussex">East Sussex</option>
+                                <option value="Essex">Essex</option>
+                                <option value="Gloucestershire">Gloucestershire</option>
+                                <option value="Greater Manchester">Greater Manchester</option>
+                                <option value="Hampshire">Hampshire</option>
+                                <option value="Herefordshire">Herefordshire</option>
+                                <option value="Hertfordshire">Hertfordshire</option>
+                                <option value="Humberside">Humberside</option>
+                                <option value="Isle of Wight">Isle of Wight</option>
+                                <option value="Isles of Scilly">Isles of Scilly</option>
+                                <option value="Kent">Kent</option>
+                                <option value="Lancashire">Lancashire</option>
+                                <option value="Leicestershire">Leicestershire</option>
+                                <option value="Lincolnshire">Lincolnshire</option>
+                                <option value="London">London</option>
+                                <option value="Merseyside">Merseyside</option>
+                                <option value="Middlesex">Middlesex</option>
+                                <option value="Norfolk">Norfolk</option>
+                                <option value="North Yorkshire">North Yorkshire</option>
+                                <option value="Northamptonshire">Northamptonshire</option>
+                                <option value="Northumberland">Northumberland</option>
+                                <option value="Nottinghamshire">Nottinghamshire</option>
+                                <option value="Oxfordshire">Oxfordshire</option>
+                                <option value="Rutland">Rutland</option>
+                                <option value="Shropshire">Shropshire</option>
+                                <option value="Somerset">Somerset</option>
+                                <option value="South Yorkshire">South Yorkshire</option>
+                                <option value="Staffordshire">Staffordshire</option>
+                                <option value="Suffolk">Suffolk</option>
+                                <option value="Surrey">Surrey</option>
+                                <option value="Tyne and Wear">Tyne and Wear</option>
+                                <option value="Warwickshire">Warwickshire</option>
+                                <option value="West Midlands">West Midlands</option>
+                                <option value="West Sussex">West Sussex</option>
+                                <option value="West Yorkshire">West Yorkshire</option>
+                                <option value="Wiltshire">Wiltshire</option>
+                                <option value="Worcestershire">Worcestershire</option>
+                                <option value="">&nbsp</option>
+                                <option value="--UK Offshore--">--UK Offshore--</option>
+                                <option value="Channel Islands">Channel Islands</option>
+                                <option value="Isle of Man">Isle of Man</option>
+                                <option value="">&nbsp</option>
+                                <option value="--Northern Ireland--">--Northern Ireland--</option>
+                                <option value="Antrim">Antrim</option>
+                                <option value="Armagh">Armagh</option>
+                                <option value="Down">Down</option>
+                                <option value="Fermanagh">Fermanagh</option>
+                                <option value="Londonderry">Londonderry</option>
+                                <option value="Tyrone">Tyrone</option>
+                                <option value="">&nbsp</option>
+                                <option value="--Scotland--">--Scotland--</option>
+                                <option value="Aberdeen City">Aberdeen City</option>
+                                <option value="Aberdeenshire">Aberdeenshire</option>
+                                <option value="Angus">Angus</option>
+                                <option value="Argyll and Bute">Argyll and Bute</option>
+                                <option value="Borders">Borders</option>
+                                <option value="Clackmannan">Clackmannan</option>
+                                <option value="Dumfries and Galloway">Dumfries and Galloway</option>
+                                <option value="Dundee (City of)">Dundee (City of)</option>
+                                <option value="East Ayrshire">East Ayrshire</option>
+                                <option value="East Dunbartonshire">East Dunbartonshire</option>
+                                <option value="East Lothian">East Lothian</option>
+                                <option value="East Renfrewshire">East Renfrewshire</option>
+                                <option value="Edinburgh (City of)">Edinburgh (City of)</option>
+                                <option value="Falkirk">Falkirk</option>
+                                <option value="Fife">Fife</option>
+                                <option value="Glasgow (City of)">Glasgow (City of)</option>
+                                <option value="Highland">Highland</option>
+                                <option value="Inverclyde">Inverclyde</option>
+                                <option value="Midlothian">Midlothian</option>
+                                <option value="Moray">Moray</option>
+                                <option value="North Ayrshire">North Ayrshire</option>
+                                <option value="North Lanarkshire">North Lanarkshire</option>
+                                <option value="Orkney">Orkney</option>
+                                <option value="Perthshire and Kinross">Perthshire and Kinross</option>
+                                <option value="Renfrewshire">Renfrewshire</option>
+                                <option value="Shetland">Shetland</option>
+                                <option value="South Ayrshire">South Ayrshire</option>
+                                <option value="South Lanarkshire">South Lanarkshire</option>
+                                <option value="Stirling">Stirling</option>
+                                <option value="West Dunbartonshire">West Dunbartonshire</option>
+                                <option value="West Lothian">West Lothian</option>
+                                <option value="Western Isles">Western Isles</option>
+                                <option value="">&nbsp</option>
+                                <option value="--Wales--">--Wales--</option>
+                                <option value="Blaenau Gwent">Blaenau Gwent</option>
+                                <option value="Bridgend">Bridgend</option>
+                                <option value="Caerphilly">Caerphilly</option>
+                                <option value="Cardiff">Cardiff</option>
+                                <option value="Carmarthenshire">Carmarthenshire</option>
+                                <option value="Ceredigion">Ceredigion</option>
+                                <option value="Conwy">Conwy</option>
+                                <option value="Denbighshire">Denbighshire</option>
+                                <option value="Flintshire">Flintshire</option>
+                                <option value="Gwynedd">Gwynedd</option>
+                                <option value="Isle of Anglesey">Isle of Anglesey</option>
+                                <option value="Merthyr Tydfil">Merthyr Tydfil</option>
+                                <option value="Monmouthshire">Monmouthshire</option>
+                                <option value="Neath Port Talbot">Neath Port Talbot</option>
+                                <option value="Newport">Newport</option>
+                                <option value="Pembrokeshire">Pembrokeshire</option>
+                                <option value="Powys">Powys</option>
+                                <option value="Rhondda Cynon Taff">Rhondda Cynon Taff</option>
+                                <option value="Swansea">Swansea</option>
+                                <option value="Torfaen">Torfaen</option>
+                                <option value="The Vale of Glamorgan">The Vale of Glamorgan</option>
+                                <option value="Wrexham">Wrexham</option>
+                            </select>
+                        </div>
+                        <div class="col-12 col-md-2">
+                            <label type="form-label" for="inputPostcode">Post Code</label>
+                            <input type="text" class="form-control" placeholder="Post Code" aria-label="Post Code" id="inputPostcode" required>
+                        </div>
 
-                            <div class="row">
-                                <div class="col">
-                                    <label type="form-label">Address</label>
-                                    <input type="text" class="form-control" placeholder="1234 Main St" aria-label="Address" required>
-                                </div>
+                        <!-- FAMILY -->
+                        <div class="col-12">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="gridCheck" id="inputFamilyMember">
+                                <label class="form-check-label" for="inputFamilyMember">
+                                    Family
+                                </label>
                             </div>
-
-                            <div class="row">
-                                <div class="col">
-                                    <label type="form-label">Address 2</label>
-                                    <input type="text" class="form-control" placeholder="Apartment, studio, house" aria-label="Address Two" required>
-                                </div>
-                            </div>
-
-                            <div class="row">
-                                <div class="col-md-6 col-12">
-                                    <label type="form-label">City</label>
-                                    <input type="text" class="form-control" placeholder="City" aria-label="City" required>
-                                </div>
-                                <div class="col-md-4 col-12">
-                                    <label type="form-label">Country</label>
-                                    <select class="form-select">
-                                        <option selected>Choose...</option>
-                                        <option>England</option>
-                                        <option>Northon Ireland</option>
-                                        <option>Scotland</option>
-                                        <option>Wales</option>
-                                    </select>
-                                </div>
-                                <div class="col-md-2 col-12">
-                                    <label type="form-label">Post Code</label>
-                                    <input type="text" class="form-control" placeholder="Post Code" aria-label="Post Code" required>
-                                </div>
-                            </div>
-
-                            <div class="row">
-                                <div class="col">
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" id="gridCheck">
-                                        <label class="form-check-label">
-                                          Family
-                                        </label>
-                                      </div>
-                                </div>
-                            </div>
-
-                            <div class="d-grid d-md-flex justify-content-md-end mt-2">
-                                <button type="submit" class="btn btn-primary">Save</button>
-                            </div>
-                        </form>
-                    </div>
+                        </div>
+                    
+                        <!-- SUBMIT BUTTON -->
+                        <div class="col-12 d-flex justify-content-end">
+                            <button type="submit" class="btn btn-primary">Save</button>
+                        </div>
+                
                 </div>
-           </div>
-       </div>
+            </form>
+                      
+            </div>
+        </div> 
+
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
